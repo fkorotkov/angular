@@ -1,0 +1,11 @@
+windows_container:
+  image: filipesilva/node-bazel-windows:0.0.2
+  platform: 1803
+  cpu: 4
+  memory: 12G
+  
+task:
+  name: test (windows)
+  install_script: yarn install --frozen-lockfile --non-interactive --network-timeout 100000
+  test_script: yarn bazel test //tools/ts-api-guardian:all --noshow_progress
+  
