@@ -1,6 +1,5 @@
 windows_container:
-  image: filipesilva/node-bazel-windows:0.0.2
-  os_version: 1803
+  dockerfile: .ci/Dockerfile.windows
   cpu: 4
   memory: 12G
   

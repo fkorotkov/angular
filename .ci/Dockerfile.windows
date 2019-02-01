@@ -1,0 +1,3 @@
+FROM cirrusci/windowsservercore:2016
+
+RUN choco install -y nodejs msys2 vcredist2015
