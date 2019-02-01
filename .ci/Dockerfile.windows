@@ -1,3 +1,5 @@
 FROM cirrusci/windowsservercore:2019
 
-RUN choco install -y --no-progress --ignore-dependencies nodejs yarn msys2 vcredist2015
+RUN powershell -Command \
+    choco install -y --no-progress --ignore-dependencies nodejs yarn msys2 vcredist2015 ; \
+    refreshenv
