@@ -1,5 +1,6 @@
 windows_container:
   dockerfile: .ci/Dockerfile.windows
+  os_version: 2019
   cpu: 4
   memory: 12G
 
